@@ -1,0 +1,30 @@
+.adel{
+  border: 2px solid blue;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 8px;
+   background-color: blue;
+
+    
+}
+
+.ass {
+    margin: 0;
+    padding: 0;
+    /* Ganti 'background: #111;' dengan ini: */
+    background-image: url('er.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white; /* Agar teks tetap terbaca */
+}
+
+/* Pastikan main-content tidak punya background warna yang menutupi body */
+#main-content {
+    display: none; 
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Opsional: lapisan hitam transparan agar teks jelas */
+}
+
+

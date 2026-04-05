@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading + Background</title>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* LOADING SCREEN */
+  #loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* WEBSITE (disembunyikan dulu) */
+  #main {
+    display: none;
+    background-image: url('o.jpeg');
+  }
+
+  /* HEADER / JUDUL */
+  .header {
+    width: 100%;
+    height: 150px;
+
+    /* BACKGROUND GAMBAR */
+    background-image: url("er.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .header h1{
+    color: lightgreen;
+    background: rgba(0,0,0,0.5); /* biar teks jelas */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  /* KONTEN */
+  .content {
+    padding: 20px;
+  }
+  
+  .wert{
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .wc{
+    float: left;
+    margin-right: 20px;
+  }
+  
+   .w5{
+    float: left;
+    margin-right: 20px;
+  }
+  
+ 
+  .container-text {
+  width: 100%;
+  overflow: hidden; /* Menyembunyikan teks yang di luar kotak */
+  background: ;blue
+  padding: 6px 0;
+  color: white;
+}
+
+.teks-berjalan {
+  white-space: nowrap; /* Mencegah teks turun ke baris baru */
+  display: inline-block;
+  padding-left: 100%; /* Mulai dari sisi paling kanan */
+  animation: jalan-terus 10s linear infinite;
+}
+
+/* Logika pergerakan */
+@keyframes jalan-terus {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  
+  @keyframes rgbAnimasi {
+            0% { color: #ff0000; }   /* Merah */
+            33% { color: #00ff00; }  /* Hijau */
+            66% { color: #0000ff; }  /* Biru */
+            100% { color: #ff0000; } /* Kembali ke Merah */
+        }
+
+        .teks-rgb {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Sans-Serif;
+            /* Menjalankan animasi: nama durasi tipe_kecepatan perulangan */
+            animation: rgbAnimasi 3s linear infinite;
+        }
+  
+</style>
+</head>
+
+<body >
+
+<!-- LOADING -->
+<div id="loading">
+  <h2>Loading...</h2>
+</div>
+
+<!-- WEBSITE -->
+<div id="main">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+  
+  <div class="container-text">
+  <div class="teks-berjalan">
+    Ini adalah contoh teks berjalan tanpa menggunakan tag marquee di Acode.
+  </div>
+</div>
+  
+  <div class="header">
+    
+    <h1 bgcolor="green">daftar hp murah tahun 2026</h1>
+    
+    
+  </div>
+
+<center><h4>halo semua kembali lagi ya di website saya yaitu piol the website disini saya akan membagikan dftar hp murah tahun 2026 ini yang dimana hp tsb ialah hp murah tp dengan spek yang gahar hmhmhm apa aja hpnya yuk simak terus gas keun cuk</h4></center>
+
+
+<h1>1.hp advan x1</h1>
+<h4>yang pertama adalah hp advan x1 hp ini memiliki spek yang ngeri tp ramah di kantong karena hp ini adalah hp lokal waah ternyata indonesia bisa ya membuat hp lokal sendiri gimana ya rincian speknya langsung cek tabel di bawah</h4>
+<div class="wert"><img src="fg.jpeg" width="200px" height=""></img alt=""></div>
+
+<table border="3" width="40%" >
+
+     <th>ram</th>
+    <th>penyimpanan</th>
+    <th>chipset</th>
+    <th>harga</th>
+
+    
+    <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+    <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+  </table> <br><br><br><br>
+
+  <h4>gimana sob  tertarik bukan langsung aja chekout linknya ada di bawah ya buruabn langsung:</h4>
+  
+ 
+  <a href=""> klik disini</a>
+  
+  
+  <h1>2.samsung a07</h1>
+  <h4>yang kedua ini adalah hp yang murah tp elegan dari brand ternama yaitu samsung waaah jarang banget ya samsung kasih hp murah tp dengan spek yang gila wow emang gimana sih rincian speknya yuk lihat ke bawah ya sob</h4>
+  
+  <div class="wc">  <img src="zx.jpeg" alt=""></div>
+
+  <table class="qwe" border='3' width="40%">
+      <th>ram</th>
+    <th>penyimpanan</th>
+    <th>chipset</th>
+    <th>harga</th>
+
+    
+    <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+    
+     <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+     <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+  </table><br><br><br>
+
+  <h4>gimana sob  tertarik bukan langsung aja chekout linknya ada di bawah ya buruabn langsung:</h4>
+  
+ 
+  <a href=""> klik disini</a>
+<h1>3.poco c75</h1>
+<h4>poco c75 adaah hp entr level yang menawarkan spek yang gahar tp dengan harga yang menggiurkan waduh emang seberapaa baagus sih speknya hmhmhm penasaran langsung aja cek keranjang kuning di bawa</h4>
+
+<div class="w5">  <img src="wq.jpeg" alt=""></div>
+
+  <table class="qwe" border='3' width="40%">
+      <th>ram</th>
+    <th>penyimpanan</th>
+    <th>chipset</th>
+    <th>harga</th>
+
+    
+    <tr>
+      <td style="border: 3px solid black; padding: 8px;">6gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g81u</td>
+      <td style="border: 3px solid black; padding: 8px;">1,82b</td>
+    </tr>
+    
+     <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+     <tr>
+      <td style="border: 3px solid black; padding: 8px;">8gb</td>
+      <td style="border: 3px solid black; padding: 8px;">128gb</td>
+      <td style="border: 3px solid black; padding: 8px;">g100</td>
+      <td style="border: 3px solid black; padding: 8px;">1,8rb</td>
+    </tr>
+  </table>
+  <h4>nah gimana sob tertarik kan kapan lagi dapat hp murah dengan spek yang sangat keren hmhmhm yuk buruan langsung aja chekout</h4>
+  <a href="">klik disini</a>
+
+<br><br><br>
+
+<center>
+  <p class="teks-rgb">daaaan itulah daftar hp murah tahun ini nah gimana serukan dan bermanfaat mangkanya yuk bantu kreatornya agar semakin semangat bikin website sekian dari saya ya mohon maaf lahir batin </p>
+</center>
+<i class="bi bi-chat-square-heart-fill"></i>
+<i class="bi bi-cup-hot"></i>
+<i class="bi bi-youtube"></i>
+
+
+
+<center>
+  <div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chat-square-heart-fill" viewBox="0 0 16 16">
+  <path d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175"/>
+  <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg>
+
+</div>
+</center>
+
+
+
+<footer style="background: #222; color: white; padding: 100px; text-align: center; font-family: sans-serif; margin-top: 100px;">
+  
+  <p style="margin-bottom: 10px; color: ;">&copy; 2024 <b>Nama Brand Kamu</b></p>
+  
+  <div style="display: flex; justify-content: center; gap: 40px;">
+    <a href="#" style="color: #007bff; text-decoration: none; font-size: 14px;">Tentang</a>
+    <a href="#" style="color: #007bff; text-decoration: none; font-size: 14px;">Kontak</a>
+    <a href="#" style="color: #007bff; text-decoration: none; font-size: 14px;">Kebijakan</a>
+  </div>
+
+</footer>
+
+
+
+
+  <!-- ISI -->
+  <div class="content">
+  </div>
+
+</div>
+
+<script>
+  setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("main").style.display = "block";
+  }, 3000);
+</script>
+
+</body>
+</html>
